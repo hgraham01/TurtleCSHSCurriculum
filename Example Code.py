@@ -1,7 +1,10 @@
-import tkinter as tk
+# Use this file to show an "experienced" example of what you can create
+# This code will run over and over!
 from time import sleep
 from turtle import *
-def shuffle_color(index):
+
+
+def shuffle_color(index):  # Code used to shuffle colors
     if index == 0:
         color('red')
     if index == 1:
@@ -16,22 +19,9 @@ def shuffle_color(index):
         color('indigo')
     if index == 6:
         color('violet')
-def square(size):
-    for i in range(4):
-        forward(size)
-        right(90)
-# def prompt():
-#     user_key = input("What would you like to do? (r: retry, q: quit): ")
-#     if user_key.lower() == "r":
-#         clearscreen()
-#         main()
-#     elif user_key.lower() == "q":
-#         print("Exiting program...")
-#         exit()
-#     else:
-#         print("Try again with either a q(for quit) or r(for retry)!")
-#         prompt()
-#Driver code
+
+
+# Driver code
 
 def main():
     pendown()
@@ -50,7 +40,8 @@ def main():
     forward(250)
     left(90)
     forward(550)
-    args = "Consider joining Computer Science Honor Society!!!"
+    # args = "Consider joining the Computer Science Honor Society!!!"
+    args = "Example code"
     for i in range(len(args)):
         write(args[i], True, 'left', ("Arial", 40, "normal"))
         shuffle_color(index)
@@ -60,11 +51,11 @@ def main():
     forward(1200)
     left(90)
     forward(550)
-    args2 = "!!You must be taking/have taken a Computer Science Class to join!!"
-    color('red')
-    for i in range(len(args2)):
-        write(args2[i], True, 'left', ("Arial", 30, "normal"))
-    # prompt()
+    # args2 = "!!You must be taking/have taken a Computer Science Class to join!!"
+    # color('red')
+    # for i in range(len(args2)):
+    #     write(args2[i], True, 'left', ("Arial", 30, "normal"))
+
 
 if __name__ == "__main__":
     while True:
